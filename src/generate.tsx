@@ -4,12 +4,13 @@ import { popToRoot, closeMainWindow, Clipboard, Detail } from "@raycast/api";
 const leet = (str: string) => {
   let returnVal = str;
   const chars = {
-    a: "4",
-    e: "3",
-    l: "1",
-    o: "0",
-    s: "5",
-    i: "|"
+    a: '4',
+    e: '3',
+    i: '1',
+    o: '0',
+    s: '5',
+    t: '7',
+    g: '9'
   }
   Object.keys(chars).forEach(k => {
     returnVal = returnVal.replace(new RegExp(k, 'g'), (chars as any)[k]);
