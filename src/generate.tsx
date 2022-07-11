@@ -26,6 +26,6 @@ export default async () => {
   passphrase[idxLeet] = leet(passphrase[idxLeet]);
 
   await closeMainWindow();
+  await Clipboard.copy(passphrase.join(' ,.'[Math.floor(Math.random()*3)]));
   await popToRoot();
-  await Clipboard.copy(passphrase.join(' _-,$'[Math.floor(Math.random()*5)]));
 };
